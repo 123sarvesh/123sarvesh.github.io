@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Models for Face Mask Recognition</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header>
+      <!-- <h1>Face Mask Recognition Models</h1> -->
+      <nav>
+        <ul>
+          <li><a href="index.html">Abstract</a></li>
+          <li><a href="models.html">Models</a></li>
+          <li><a href="algorithms.html">Algorithms</a></li>
+          <li><a href="about.html">Conclusion</a></li>
+          <li><a href="quiz.html">Quiz</a></li>
+          <li><a href="references.html">References</a></li>
+
+          <!-- <li><a href="abstract.html">Abstract</a></li> -->
+        </ul>
+      </nav>
+    </header>
+
+    <section>
+      <h2>Popular Models</h2>
+      <p>
+        For face mask recognition, several models can be employed depending on
+        the trade-off between speed and accuracy. This section discusses some of
+        the most effective models used in computer vision for this purpose.
+      </p>
+      <br />
+      <ul>
+        <li>
+          1. MobileNetV2: MobileNetV2 is a lightweight convolutional neural
+          network (CNN) that excels in mobile and embedded vision applications.
+          Its architecture is designed to maintain accuracy while significantly
+          reducing the computational load, making it ideal for real-time face
+          mask detection. The model employs depthwise separable convolutions,
+          reducing the number of parameters without compromising on performance.
+          Due to its efficiency, MobileNetV2 is a common choice for edge devices
+          and mobile applications where computational resources are limited.
+        </li>
+        <br />
+        <li>
+          2. ResNet (Residual Networks): ResNet is a deeper CNN architecture
+          that solves the vanishing gradient problem through the use of skip
+          connections, which allow the gradient to flow through the network more
+          easily during backpropagation. This enables the network to have many
+          more layers (e.g., 50, 101, or 152) without suffering from
+          degradation. ResNet is particularly powerful in tasks that require
+          high accuracy, such as face detection and mask recognition. However,
+          its complexity makes it more resource-intensive compared to models
+          like MobileNet.
+        </li>
+        <br />
+        <li>
+          3. VGG16: VGG16 is a classic CNN model known for its simplicity and
+          effectiveness in image classification and object detection. The
+          network consists of 16 layers, primarily composed of convolutional
+          layers followed by fully connected layers. While VGG16 is accurate, it
+          is more computationally expensive than models like MobileNetV2 due to
+          its large number of parameters, making it less ideal for real-time
+          applications on low-power devices. Nonetheless, it remains a solid
+          choice when computational resources are not a concern.
+        </li>
+        <br />
+        <li>
+          4. InceptionNet: InceptionNet, also known as GoogleNet, introduces the
+          concept of Inception modules, which allow the model to capture
+          multi-scale features more efficiently. This is achieved by combining
+          convolutional layers with different kernel sizes in the same block.
+          InceptionNet can be useful for face mask recognition as it captures
+          both global and local features effectively, allowing for robust
+          detection under varying conditions such as lighting changes and
+          partial occlusions.
+        </li>
+      </ul>
+      <br />
+      <p>
+        Each of these models can be fine-tuned using transfer learning
+        techniques, where a pre-trained model is adapted to the specific task of
+        mask detection. Transfer learning accelerates training and improves
+        performance, especially when large labeled datasets are not readily
+        available.
+      </p>
+    </section>
+
+    <footer>
+      <p>&copy; 2024 Face Mask Recognition. All rights reserved.</p>
+    </footer>
+  </body>
+</html>

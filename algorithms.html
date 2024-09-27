@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Algorithms for Face Mask Recognition</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header>
+      <!-- <h1>Face Mask Recognition Algorithms</h1> -->
+      <nav>
+        <ul>
+          <li><a href="index.html">Abstract</a></li>
+          <!-- <li><a href="index.html">Home</a></li> -->
+          <li><a href="models.html">Models</a></li>
+          <li><a href="algorithms.html">Algorithms</a></li>
+          <li><a href="about.html">Conclusion</a></li>
+          <li><a href="quiz.html">Quiz</a></li>
+          <li><a href="references.html">References</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <section>
+      <h2>Detection Algorithms</h2>
+      <p>
+        The success of face mask recognition systems depends not only on the
+        models used but also on the algorithms that handle object detection and
+        classification. Below are some of the most popular algorithms employed
+        in face mask recognition.
+      </p>
+      <br />
+      <ul>
+        <li>
+          1. YOLO (You Only Look Once): YOLO is a fast object detection
+          algorithm that processes an entire image in a single forward pass
+          through the neural network. It divides the image into a grid and
+          assigns bounding boxes and class probabilities to each grid cell. YOLO
+          is widely used in real-time applications because of its speed. In the
+          context of face mask recognition, YOLO can identify faces and classify
+          them as either masked or unmasked in real time, making it highly
+          effective in surveillance and monitoring systems.
+        </li>
+        <br />
+        <li>
+          2. SSD (Single Shot Multibox Detector): SSD is another efficient
+          object detection algorithm that, like YOLO, performs object detection
+          in a single pass. SSD improves on YOLO by using multiple feature maps
+          of different resolutions to detect objects at varying scales. This
+          makes it more accurate in detecting smaller objects, such as faces or
+          masks in a crowded scene. SSD also uses anchor boxes to better capture
+          aspect ratios and scales, leading to more accurate detection results
+          in complex scenes.
+        </li>
+        <br />
+        <li>
+          3. Haar Cascade Classifier: The Haar Cascade Classifier is a machine
+          learning-based approach for object detection, known for its simplicity
+          and efficiency in detecting faces in an image. It uses a cascade of
+          classifiers to identify objects by scanning the image at multiple
+          scales and applying a series of filters. Although Haar Cascade is not
+          as accurate as deep learning-based methods like YOLO or SSD, it is
+          still useful for face detection in resource-constrained environments.
+        </li>
+        <br />
+        <li>
+          4. Transfer Learning: Transfer learning is a technique that involves
+          taking a pre-trained model (such as MobileNet or ResNet) and
+          fine-tuning it on a smaller, task-specific dataset. This approach
+          saves time and computational resources, as the model has already
+          learned general features from a large dataset. In face mask
+          recognition, transfer learning allows developers to build robust
+          models without the need for extensive labeled data, making it a highly
+          practical approach.
+        </li>
+      </ul>
+      <br />
+      <p>
+        These algorithms form the backbone of modern face mask recognition
+        systems, each offering a unique balance of speed and accuracy depending
+        on the application.
+      </p>
+    </section>
+
+    <footer>
+      <p>&copy; 2024 Face Mask Recognition. All rights reserved.</p>
+    </footer>
+  </body>
+</html>

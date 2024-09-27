@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="stylesheet" href="styles.css" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Face Mask Recognition Quiz</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        margin-top: 80px;
+        margin-bottom: 0;
+        margin-left: 0;
+        margin-right: 0;
+        padding: 0;
+        background-color: #f4f4f4;
+        color: #333;
+      }
+      .quiz-container {
+        max-width: 600px;
+        margin: 0 auto;
+        padding: 20px;
+        border: 1px solid #ccc;
+        border-radius: 10px;
+      }
+      h1 {
+        text-align: center;
+      }
+      .question {
+        margin: 20px 0;
+      }
+      .options {
+        list-style-type: none;
+        padding: 0;
+      }
+      .options li {
+        margin: 5px 0;
+      }
+      .link-button {
+        display: inline-block;
+        padding: 10px 15px;
+        font-size: 16px;
+        text-align: center;
+        text-decoration: none;
+        background-color: #007bff;
+        color: white;
+        border-radius: 5px;
+      }
+      .link-button:hover {
+        background-color: #0056b3;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <!-- <h1>Abstract: Face Mask Recognition in Computer Vision</h1> -->
+      <nav>
+        <ul>
+          <li><a href="index.html">Abstract</a></li>
+          <li><a href="models.html">Models</a></li>
+          <li><a href="algorithms.html">Algorithms</a></li>
+          <li><a href="about.html">Conclusion</a></li>
+          <li><a href="quiz.html">Quiz</a></li>
+          <li><a href="references.html">References</a></li>
+
+          <!-- <li><a href="abstract.html">Abstract</a></li> -->
+        </ul>
+      </nav>
+    </header>
+    <div class="quiz-container">
+      <h1>Face Mask Recognition Quiz</h1>
+
+      <div class="question">
+        <p>
+          <strong
+            >1. Which algorithm is commonly used for real-time object
+            detection?</strong
+          >
+        </p>
+        <ul class="options">
+          <li><input type="radio" name="q1" id="q1a1" /> YOLO</li>
+          <li><input type="radio" name="q1" id="q1a2" /> SVM</li>
+          <li><input type="radio" name="q1" id="q1a3" /> KNN</li>
+          <li><input type="radio" name="q1" id="q1a4" /> Naive Bayes</li>
+        </ul>
+      </div>
+
+      <div class="question">
+        <p>
+          <strong
+            >2. Which model is often used for lightweight face mask recognition
+            on mobile devices?</strong
+          >
+        </p>
+        <ul class="options">
+          <li><input type="radio" name="q2" id="q2a1" /> VGG16</li>
+          <li><input type="radio" name="q2" id="q2a2" /> MobileNetV2</li>
+          <li><input type="radio" name="q2" id="q2a3" /> ResNet</li>
+          <li><input type="radio" name="q2" id="q2a4" /> AlexNet</li>
+        </ul>
+      </div>
+
+      <div class="question">
+        <p>
+          <strong
+            >3. What is the main challenge in face mask recognition under
+            real-world conditions?</strong
+          >
+        </p>
+        <ul class="options">
+          <li><input type="radio" name="q3" id="q3a1" /> Training speed</li>
+          <li>
+            <input type="radio" name="q3" id="q3a2" /> Occlusion and lighting
+          </li>
+          <li><input type="radio" name="q3" id="q3a3" /> Model accuracy</li>
+          <li><input type="radio" name="q3" id="q3a4" /> Data size</li>
+        </ul>
+      </div>
+
+      <div class="question">
+        <p>
+          <strong
+            >4. Which of the following is a preprocessing technique used in face
+            mask detection?</strong
+          >
+        </p>
+        <ul class="options">
+          <li><input type="radio" name="q4" id="q4a1" /> Data segmentation</li>
+          <li><input type="radio" name="q4" id="q4a2" /> PCA</li>
+          <li><input type="radio" name="q4" id="q4a3" /> Image flipping</li>
+          <li><input type="radio" name="q4" id="q4a4" /> Face detection</li>
+        </ul>
+      </div>
+
+      <div class="question">
+        <p>
+          <strong
+            >5. What is transfer learning used for in face mask
+            recognition?</strong
+          >
+        </p>
+        <ul class="options">
+          <li>
+            <input type="radio" name="q5" id="q5a1" /> Reducing dataset size
+          </li>
+          <li>
+            <input type="radio" name="q5" id="q5a2" /> Reducing training time
+          </li>
+          <li>
+            <input type="radio" name="q5" id="q5a3" /> Increasing model depth
+          </li>
+          <li>
+            <input type="radio" name="q5" id="q5a4" /> Improving output speed
+          </li>
+        </ul>
+      </div>
+
+      <div class="question">
+        <a href="answers.html" class="link-button">Submit</a>
+      </div>
+    </div>
+  </body>
+</html>
